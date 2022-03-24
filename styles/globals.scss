@@ -1,0 +1,43 @@
+@import "./themes/";
+
+@font-face {
+  font-family: 'SFPro';
+  src: url("/fonts/SF-Pro-Display-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'SFPro';
+  src: url("/fonts/SF-Pro-Display-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SFPro';
+  src: url("/fonts/SF-Pro-Display-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url("/fonts/SF-Pro-Text-Regular.otf");
+}
+
+html,
+body {
+  background-color: $color-light-3;
+  padding: 0;
+  margin: 0;
+  font-family: SFPro;
+}
+
+p{
+  font-family: SFProText;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

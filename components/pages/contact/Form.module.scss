@@ -1,0 +1,85 @@
+@import "styles/themes";
+
+.form{
+    @include layout-container-lg;
+    @include layout-container-ver-lg;
+
+    .title{
+        font-size: 3em;
+        color: $color-primary;
+        margin-bottom: 0;
+    }
+    .subtitle{
+        color: $color-secondary;
+    }
+    .title, .subtitle{
+        text-align: center;
+    }
+
+    form{
+        max-width: 640px;
+        margin: 3em auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        label{
+            color: $color-secondary;
+            font-weight: bold;
+        }
+        .flexInput{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            @include md-p{
+                flex-direction: column;
+            }
+            .half{
+                width: 47%;
+                margin-bottom: 1em;
+                @include md-p{
+                    width: 100%;
+                }
+                input{
+                    margin-top: .5em;
+                    width: 100%;
+                    background-color: $color-light-3;
+                    border: 1px solid $color-primary;
+                    padding: .6em 1em;
+                    border-radius: 8px;
+                    font-family: SFProText;
+                    color: $color-primary;
+                    outline: none;
+                    font-size: 16px;
+                }
+            }
+        }
+        .msgInput{
+            width: 100%;
+            textarea{
+                margin-top: .5em;
+                width: 100%;
+                background-color: $color-light-3;
+                border: 1px solid $color-primary;
+                padding: .6em 1em;
+                border-radius: 8px;
+                font-family: SFProText;
+                color: $color-primary;
+                outline: none;
+                font-size: 16px;
+                resize: vertical;
+            }
+        }
+        button{
+            cursor: pointer;
+            margin-top: 2em;
+            padding: 1em 2em;
+            font-weight: bold;
+            font-family: SFPro;
+            border: none;
+            background-color: $color-primary;
+            color: $color-light-3;
+            border-radius: 40px;
+        }
+    }
+
+}

@@ -1,0 +1,54 @@
+@import "styles/themes";
+
+.skills {
+  @include layout-container-lg;
+
+  .wrapper {
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    background-color: $color-light-3;
+    border-radius: 16px;
+    border: 1px solid $color-secondary;
+    overflow: hidden;
+    @include md-p {
+      transform: translateY(-30%);
+      flex-direction: column;
+    }
+    @include md-tp {
+      transform: translateY(-32%);
+      flex-direction: column;
+    }
+    .skill {
+      text-align: center;
+      padding: 4em 3.5em;
+      &:nth-child(2) {
+        border-right: 1px solid $color-secondary;
+        border-left: 1px solid $color-secondary;
+        @include md-p {
+          border: none;
+          border-top: 1px solid $color-secondary;
+          border-bottom: 1px solid $color-secondary;
+        }
+        @include md-tp {
+          border: none;
+          border-top: 1px solid $color-secondary;
+          border-bottom: 1px solid $color-secondary;
+        }
+      }
+      .text,
+      .subtext {
+        color: $color-secondary;
+        max-width: 340px;
+        margin: 0 auto;
+      }
+      .title,
+      .subtitle {
+        color: $color-primary;
+      }
+      .subtitle {
+        margin-top: 2em;
+      }
+    }
+  }
+}

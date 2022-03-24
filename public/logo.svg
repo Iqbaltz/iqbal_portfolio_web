@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="94.696" height="100" viewBox="0 0 94.696 100">
+  <g id="Group_152" data-name="Group 152" transform="translate(-201 4108.657)">
+    <path id="Subtraction_2" data-name="Subtraction 2" d="M47.53,53a19.161,19.161,0,0,1-8.2-1.852A18.791,18.791,0,0,1,32.559,45.7L0,4.025A18.8,18.8,0,0,1,11.674,0a19.166,19.166,0,0,1,8.2,1.852A18.792,18.792,0,0,1,26.647,7.3L47.909,34.511,69.171,7.3a19.276,19.276,0,0,1,1.341-1.541v30.66L63.26,45.7a18.785,18.785,0,0,1-6.774,5.445A19.168,19.168,0,0,1,48.288,53c-.142,0-.267,0-.38,0S47.655,53,47.53,53Z" transform="translate(201 -4088.16)" fill="#4633c5"/>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M18.752,66.568h0A18.75,18.75,0,0,1,0,47.816V0H.016L18.752,24.761Z" transform="translate(201 -4075.225)" fill="#4633c5"/>
+    <path id="Rectangle_28" data-name="Rectangle 28" d="M0,0H0A18.752,18.752,0,0,1,18.752,18.752V75.945a0,0,0,0,1,0,0h0A18.752,18.752,0,0,1,0,57.193V0A0,0,0,0,1,0,0Z" transform="translate(276.945 -4084.601)" fill="#4633c5"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="12.059" height="12.059" transform="translate(286.429 -4108.657) rotate(45)" fill="#6c79dc"/>
+  </g>
+</svg>

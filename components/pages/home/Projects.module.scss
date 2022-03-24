@@ -1,0 +1,81 @@
+@import "styles/themes";
+
+.projects{
+    @include layout-container-lg;
+
+    margin-top: -8em;
+    margin-bottom: 2em;
+    text-align: center;
+    @include md-p{
+        margin-top: -16em;
+    }
+    @include md-t{
+        margin-top: -14em;
+    }
+    .title{
+        color: $color-primary;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    .subtitle{
+        color: $color-secondary;
+        font-weight: 300;
+        font-size: 18px;
+        a{
+            color: $color-primary;
+            text-decoration: underline;
+        }
+    }
+    .wrapper{
+        margin-top: 3em;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 24px;
+        .project{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            height: 232px;
+            border-radius: 16px;
+            overflow: hidden;
+            background-color: $color-primary;
+            padding: 2em;
+            transition: $link-trans;
+            @include md-p{
+                height: 220px;
+            }
+            img{
+                transition: $link-trans;
+            }
+            .desc, .linkBtn{
+                color: $color-light-3;
+                transition: $link-trans;
+            }
+            .linkBtn{
+                font-weight: 300;
+                padding: .5em 1.6em;
+                border: 1px solid $color-primary;
+                border-radius: 50px;
+                color: $color-light-3;
+                transition: $link-trans;
+                &:hover{
+                    background-color: $color-primary;
+                }
+            }
+            &:hover{
+                img{
+                    filter: brightness(0.1);
+                    opacity: .75;
+                }
+                .desc, .linkBtn{
+                    position: relative;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

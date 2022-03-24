@@ -1,0 +1,47 @@
+@import "styles/themes/";
+
+.nav{
+    @include layout-container-lg;
+    @include layout-container-ver-sm;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        img{
+            width: 48px;
+            @include md-p{
+                width: 40px;
+            }
+        }
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        .icon{
+            margin-right: 2em;
+            img{
+                width: 24px;
+                transition: $link-trans;
+                &:hover{
+                    transform: scale(1.15);
+                }
+            }
+        }
+        .contactBtn{
+            color: $color-primary;
+            font-weight: 300;
+            border: 1px solid $color-primary;
+            border-radius: 50px;
+            padding: .6em 1.8em;
+            transition: $link-trans;
+            &:hover{
+                color: $color-light-3;
+                background-color: $color-primary;
+            }
+            @include md-p{
+                padding: .5em 1.6em;
+            }
+        }
+    }
+}

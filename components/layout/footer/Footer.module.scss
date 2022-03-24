@@ -1,0 +1,53 @@
+@import "styles/themes";
+
+.footer{
+    @include layout-container-lg;
+    @include layout-container-ver-lg;
+
+    background-color: $color-primary;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    text-align: center;
+    color: $color-light-3;
+    .logo{
+        width: 48px;
+        margin-top: 4em;
+        @include md-p{
+            margin-top: 10em;
+        }
+    }
+    .slogan{
+        font-family: SFPro;
+        max-width: 220px;
+        margin: 2em auto;
+    }
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 220px;
+        margin: 0 auto;
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border: 1px solid $color-secondary;
+            border-radius: 50px;
+            transition: $link-trans;
+            &:hover{
+                background-color: $color-secondary;
+            }
+            img{
+                width: 20px;
+                filter: brightness(10);
+            }
+        }
+    }
+    .copy{
+        font-family: SFPro;
+        margin-top: 2em;
+        font-weight: 300;
+    }
+}
