@@ -8,16 +8,16 @@ export default function Form() {
       <form action="">
         <div className={styles.flexInput}>
           <div className={styles.half}>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input type="text" id="name" name="Name" />
           </div>
           <div className={styles.half}>
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input type="text" id="email" name="Email" />
           </div>
         </div>
         <div className={styles.msgInput}>
-          <label for="message">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea name="Message" id="message" cols="30" rows="10"></textarea>
         </div>
         <button type="submit">Send Message</button>
