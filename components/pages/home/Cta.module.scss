@@ -4,7 +4,7 @@
     @include layout-container-lg;
     .wrapper{
         transform: translateY(50%);
-        background-color: #201758;
+        background-color: $color-secondary;
         color: $color-light-3;
         display: flex;
         justify-content: space-between;

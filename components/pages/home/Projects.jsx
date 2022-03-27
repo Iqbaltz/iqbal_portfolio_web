@@ -1,17 +1,17 @@
 import styles from "./Projects.module.scss";
-import Image from "next/image";
+import { urlFor } from "../../../libs/sanity";
 
-export default function Projects() {
+export default function Projects({data}) {
   return (
     <section className={styles.projects}>
       <h1 className={styles.title}>{heading.title}</h1>
       <p className={styles.subtitle}>{heading.subtitle} <a href="mailto:mhdiqbaltan@gmail.com">Contact me</a></p>
       <div className={styles.wrapper}>
-        {projects.map(({img, about, link},i) => (
+        {data.map(({image, caption, url},i) => (
           <div className={styles.project} key={i}>
-            <Image src={img} alt="project" layout="fill" objectFit="cover" />
-            <p className={styles.desc}>{about}</p>
-            <a href={link} className={styles.linkBtn}>Visit Website</a>
+            <img src={urlFor(image)} alt={caption} />
+            <p className={styles.desc}>{caption}</p>
+            <a href={url} className={styles.linkBtn}>Visit Website</a>
           </div>
         ))}
       </div>
