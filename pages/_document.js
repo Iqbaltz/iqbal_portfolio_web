@@ -40,7 +40,7 @@ class MyDocument extends Document {
           <meta
             name="title"
             property="og:title"
-            content="Iqbal's Portfolio Site  | Frontend Web Developer"
+            content="Iqbal's Portfolio Site | Frontend Web Developer"
           />
           <meta name="type" property="og:type" content="website" />
           <meta
