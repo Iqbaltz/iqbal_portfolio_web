@@ -1,7 +1,9 @@
 import { client } from "./sanity";
 
 export async function getHeroItem() {
-  const items = await client.fetch(`*[_type == "hero"]`);
+  const items = await client.fetch(
+    `*[_type == "hero"] | order(_createdAt asc)`
+  );
   return items[0];
 }
 

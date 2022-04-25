@@ -15,4 +15,7 @@ export default {
     site: "@site",
     cardType: "summary_large_image",
   },
+  facebook: {
+    appId: "1234567890",
+  },
 };

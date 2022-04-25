@@ -37,6 +37,22 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6C79DC" />
           <meta name="msapplication-TileColor" content="#4633C5" />
           <meta name="theme-color" content="#ffffff" />
+          <meta
+            name="title"
+            property="og:title"
+            content="Iqbal's Portfolio Site  | Frontend Web Developer"
+          />
+          <meta name="type" property="og:type" content="website" />
+          <meta
+            name="image"
+            property="og:image"
+            content="https://cdn.sanity.io/images/rkhcfbt7/production/77434737944ad330fadafd810c363324b32eb915-1618x1078.png?w=2000&fit=max&auto=format"
+          />
+          <meta
+            name="url"
+            property="og:url"
+            content="https://www.muhammadiqbal.tech/"
+          />
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
