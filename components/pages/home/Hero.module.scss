@@ -1,67 +1,68 @@
 @import "styles/themes";
 
-.hero{
-    @include layout-container-lg;
-    @include layout-container-ver-sm;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-height: 80vh;
-    @include md-p{
-        @include layout-container-ver-lg;
-        min-height: 70vh;
+.hero {
+  @include layout-container-lg;
+  @include layout-container-ver-sm;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+  @include md-p {
+    @include layout-container-ver-lg;
+    min-height: 70vh;
+  }
+  @include md-t {
+    @include layout-container-ver-lg;
+    min-height: 75vh;
+  }
+  .title {
+    font-size: 3em;
+    color: $color-primary;
+    margin-bottom: 0em;
+    @include md-p {
+      font-size: 2em;
     }
-    @include md-t{
-        @include layout-container-ver-lg;
-        min-height: 75vh;
+    @include md-t {
+      font-size: 2.5em;
     }
-    .title{
-        font-size: 3em;
-        color: $color-primary;
-        margin-bottom: 0em;
-        @include md-p{
-            font-size: 2em;
-        }
-        @include md-t{
-            font-size: 2.5em;
-        }
+  }
+  .subtitle {
+    color: $color-secondary;
+    font-size: 22px;
+    font-weight: 300;
+    @include md-p {
+      font-size: 18px;
     }
-    .subtitle{
-        color: $color-secondary;
-        font-size: 22px;
-        font-weight: 300;
-        @include md-p{
-            font-size: 18px;
-        }
-        @include md-t{
-            font-size: 20px;
-        }
+    @include md-t {
+      font-size: 20px;
     }
-    .avatar{
-        margin-top: 3em;
-        position: relative;
-        width: 100%;
-        .ava{
-            width: 200px;
-            @include md-p{
-                width: 128px;
-            }
-            @include md-t{
-                width: 160px;
-            }
-        }
-        .skl{
-            position: absolute;
-            top: 12px;
-            left: 50%;
-            transform: translateX(-50%) scale(0.85);
-            max-width: 100%;
-            @include md-p{
-                top: 20px;
-                transform: translateX(-50%);
-            }
-        }
+  }
+  .avatar {
+    margin-top: 3em;
+    position: relative;
+    width: 100%;
+    .ava {
+      border-radius: 160px;
+      width: 200px;
+      @include md-p {
+        width: 128px;
+      }
+      @include md-t {
+        width: 160px;
+      }
     }
+    .skl {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%) scale(0.85);
+      max-width: 100%;
+      @include md-p {
+        top: 20px;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
